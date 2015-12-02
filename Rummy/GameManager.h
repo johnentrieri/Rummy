@@ -1,6 +1,7 @@
 #include "Player.h"
 #include "Deck.h"
 #include "Card.h"
+#include "Hand.h"
 
 #pragma once
 class GameManager
@@ -13,6 +14,7 @@ public:
 	void updateScreen(Player p);
 	void playerTurn(Player &p);
 	void play();
+	int winCheck(Hand h);
 	
 private:
 	Player player1;
