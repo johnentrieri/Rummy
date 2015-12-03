@@ -11,39 +11,17 @@ Hand initializeHand();
 int main()
 {
 	//Hand hand = initializeHand();
-
+	int values[] = { 2,2,2,2,6,7,8 };
+	int suits[] = { 2,2,2,2,2,2,2 };
 	Card cards[7];
 	Hand hand;
 
-	cards[0].setValue(11);
-	cards[0].setSuit(2);
-	hand.put(0, cards[0]);
+	for (int i = 0; i < 7; i++) {
+		cards[i].setValue(values[i]);
+		cards[i].setSuit(values[i]);
+		hand.put(i, cards[i]);
 
-	cards[1].setValue(2);
-	cards[1].setSuit(2);
-	hand.put(1, cards[1]);
-
-	cards[2].setValue(3);
-	cards[2].setSuit(2);
-	hand.put(2, cards[2]);
-
-	cards[3].setValue(11);
-	cards[3].setSuit(3);
-	hand.put(3, cards[3]);
-
-	cards[4].setValue(11);
-	cards[4].setSuit(3);
-	hand.put(4, cards[4]);
-
-	cards[5].setValue(14);
-	cards[5].setSuit(2);
-	hand.put(5, cards[5]);
-
-	cards[6].setValue(11);
-	cards[6].setSuit(3);
-	hand.put(6, cards[6]);
-
-
+	}
 
 	winCheck(hand);
 
