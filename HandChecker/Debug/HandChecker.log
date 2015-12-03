@@ -1,0 +1,16 @@
+﻿Build started 12/2/2015 8:50:22 PM.
+     1>Project "D:\Documents\GitHub\Rummy\HandChecker\HandChecker.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt HandChecker.cpp
+         HandChecker.cpp
+       Link:
+         D:\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Documents\GitHub\Rummy\Debug\HandChecker.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Documents\GitHub\Rummy\Debug\HandChecker.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Documents\GitHub\Rummy\Debug\HandChecker.lib" /MACHINE:X86 Debug\Card.obj
+         Debug\Hand.obj
+         Debug\WinLogic.obj
+         Debug\HandChecker.obj
+         HandChecker.vcxproj -> D:\Documents\GitHub\Rummy\Debug\HandChecker.exe
+     1>Done Building Project "D:\Documents\GitHub\Rummy\HandChecker\HandChecker.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.49

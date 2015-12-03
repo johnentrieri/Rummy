@@ -105,31 +105,4 @@ void GameManager::play()
 
 }
 
-int GameManager::winCheck(Hand h)
-{
-	Card cards[7];
-	
 
-	for (int i = 0; i < 7; i++) {
-		cards[i] = h.get(i);
-	}
-
-	int of_a_kind = 0;
-	for (int j = 0; j < 7; j++) {
-		for (int k = 0; k < 7; k++) {
-			if (cards[j].getValue() == cards[k].getValue()) {
-				of_a_kind++;
-			}
-
-
-			if (of_a_kind == 4) {
-
-			}
-		}
-	}
-
-
-
-
-
-}

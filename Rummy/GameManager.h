@@ -14,7 +14,6 @@ public:
 	void updateScreen(Player p);
 	void playerTurn(Player &p);
 	void play();
-	int winCheck(Hand h);
 	
 private:
 	Player player1;
