@@ -11,14 +11,14 @@ Hand initializeHand();
 int main()
 {
 	//Hand hand = initializeHand();
-	int values[] = { 2,2,2,2,6,7,8 };
-	int suits[] = { 2,2,2,2,2,2,2 };
+	int values[] = { 4,12,13,11,2,3,14 };
+	int suits[] = { 1,2,2,2,1,1,1 };
 	Card cards[7];
 	Hand hand;
 
 	for (int i = 0; i < 7; i++) {
 		cards[i].setValue(values[i]);
-		cards[i].setSuit(values[i]);
+		cards[i].setSuit(suits[i]);
 		hand.put(i, cards[i]);
 
 	}
