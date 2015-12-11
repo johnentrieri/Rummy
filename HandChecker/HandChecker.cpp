@@ -1,4 +1,5 @@
 #include <iostream>
+#include "../Rummy/Deck.h"
 #include "../Rummy/Hand.h"
 #include "../Rummy/Card.h"
 #include "../Rummy/WinLogic.h"
@@ -6,13 +7,15 @@
 using namespace std;
 
 Hand initializeHand();
+Hand randHand();
 
 
 int main()
 {
 	//Hand hand = initializeHand();
-	int values[] = { 4,12,13,11,2,3,14 };
-	int suits[] = { 1,2,2,2,1,1,1 };
+	/*
+	int values[] = { 6, 3, 4, 14, 2, 6, 6 };
+	int suits[] =  { 2, 2, 2, 2, 2, 3, 0 };
 	Card cards[7];
 	Hand hand;
 
@@ -22,10 +25,37 @@ int main()
 		hand.put(i, cards[i]);
 
 	}
+	*/
+	//winCheck(hand);
 
-	winCheck(hand);
+	int result;
+	Hand hand;
+
+	for (int i = 0; i < 10000000; i++) {
+		hand = randHand();
+		result = winCheck2(hand);
+		if (result) {
+			hand.print();
+			cout << "RUMMY - Code: " << result << "\n\n";
+		}
+	}
+
+
 
 	system("PAUSE");
+}
+
+
+Hand randHand()
+{
+	Deck tempDeck;
+	Hand hand;
+
+	for (int i = 0; i < 7; i++) {
+		hand.put(i, tempDeck.draw());
+	}
+
+	return hand;
 }
 
 Hand initializeHand()

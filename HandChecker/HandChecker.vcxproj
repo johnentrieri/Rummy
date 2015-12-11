@@ -119,11 +119,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\Rummy\Card.h" />
+    <ClInclude Include="..\Rummy\Deck.h" />
     <ClInclude Include="..\Rummy\Hand.h" />
     <ClInclude Include="..\Rummy\WinLogic.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Rummy\Card.cpp" />
+    <ClCompile Include="..\Rummy\Deck.cpp" />
     <ClCompile Include="..\Rummy\Hand.cpp" />
     <ClCompile Include="..\Rummy\WinLogic.cpp" />
     <ClCompile Include="HandChecker.cpp" />

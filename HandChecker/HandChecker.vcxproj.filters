@@ -24,6 +24,9 @@
     <ClInclude Include="..\Rummy\WinLogic.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\Rummy\Deck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Rummy\WinLogic.cpp">
@@ -36,6 +39,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="HandChecker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Rummy\Deck.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
